@@ -1,0 +1,16 @@
+#! /bin/bash -l
+#SBATCH -p scarf
+#SBATCH --job-name $job_name
+#SBATCH --nodes=$num_nodes
+#SBATCH --exclusive
+#SBATCH -C amd
+#SBATCH --time=$wall_timer
+
+module purge
+module load AMDmodules
+module load CASTEP/21.1.1-iomkl-2021a
+module list
+
+mpirun castep.mpi $job_name
+
+cp $job_name.castep $result_dir/

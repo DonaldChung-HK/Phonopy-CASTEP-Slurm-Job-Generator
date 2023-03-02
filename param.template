@@ -1,0 +1,22 @@
+TASK : Single Point
+BASIS_PRECISION : PRECISE
+FINITE_BASIS_CORR: AUTOMATIC
+XC_FUNCTIONAL : PBE
+SEDC_APPLY : TRUE
+SEDC_SCHEME : G06
+GEOM_FORCE_TOL : 1e-3
+ELEC_FORCE_TOL : 1e-6
+ELEC_ENERGY_TOL : 1e-9
+ELEC_EIGENVALUE_TOL : 1e-9
+GEOM_MAX_ITER : 200
+WRITE_CELL_STRUCTURE : TRUE
+GRID_SCALE : 2.5
+
+calculate_ELF : false
+calculate_stress : false
+popn_calculate : false
+calculate_hirshfeld : false
+calculate_densdiff : false
+pdos_calculate_weights : false
+max_scf_cycles : 300
+fix_occupancy : TRUE

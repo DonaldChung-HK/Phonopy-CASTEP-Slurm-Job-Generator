@@ -1,0 +1,10 @@
+$cell
+##optional (generate symmetry)
+# SYMMETRY_GENERATE: TRUE
+# SYMMETRY_TOL: 0.01
+
+
+
+kpoint_mp_grid : $kpoint_mp_grid
+
+kpoint_mp_offset : $kpoint_mp_offset
